@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: axion-it-company
+    container_name: Naipal-Singh-Saini-Company
     restart: unless-stopped
     ports:
       - "5000:5000"
