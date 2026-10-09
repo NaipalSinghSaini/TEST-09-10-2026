@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  axion-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: axion-it-company
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+    volumes:
+      - ./server/data:/app/server/data
